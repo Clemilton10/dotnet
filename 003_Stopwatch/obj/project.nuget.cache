@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S8TV8z50mjwVYZDic6ul9Qvn80t554Ep7X6n2HmiuU6rMoUVVRdma9qXP3bjLrjkX6kxHf1U2PPxws4CTHJ4KA==",
+  "dgSpecHash": "D0TLOv+pr9ro9VvsoaITZaZdPt6Pv5B6UadlmA4492PEHBYVxYYBn8Ng0r1s7qat898QV7TibPvvAlVpt4eiaQ==",
   "success": true,
-  "projectFilePath": "C:\\users\\clemas\\desktop\\Stopwatch\\Stopwatch.csproj",
+  "projectFilePath": "C:\\Users\\clemas\\Desktop\\dotnet\\003_Stopwatch\\Stopwatch.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

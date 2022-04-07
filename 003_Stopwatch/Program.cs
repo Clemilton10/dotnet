@@ -9,6 +9,12 @@ namespace Calculator
         {
             Menu();
         }
+        static string Input(string df)
+        {
+            string vl = Console.ReadLine() ?? df;
+            vl = String.IsNullOrEmpty(vl) ? df : vl;
+            return vl;
+        }
         static void Menu()
         {
             try
@@ -19,26 +25,31 @@ namespace Calculator
                 Console.WriteLine("0-Sair");
                 Console.WriteLine("Quanto tempo deseja contar?");
 
-                string data = Console.ReadLine().ToLower();
-                char type = char.Parse( data.Substring( data.Length - 1, 1 ) );
-                int time = int.Parse( data.Substring(0, data.Length - 1) );
-                //Console.WriteLine(data);
-                //Console.WriteLine(type);
-                //Console.WriteLine(time);
-                Console.Clear();
-                Console.WriteLine("0-Não");
-                Console.WriteLine("1-Sim");
-                Console.WriteLine("A contagem é regressiva?");
-                int rg = int.Parse( Console.ReadLine() );
-
-                int multiplier = 1;
-
-                if(type == 'm') multiplier = 60;
+                string data = Input("0");
 
                 if(data == "0")
+                {
                     System.Environment.Exit(0);
-                
-                PreStart(time * multiplier, rg);
+                }else
+                {
+                    data = data.ToLower();
+                    char type = char.Parse( data.Substring( data.Length - 1, 1 ) );
+                    int time = int.Parse( data.Substring(0, data.Length - 1) );
+                    //Console.WriteLine(data);
+                    //Console.WriteLine(type);
+                    //Console.WriteLine(time);
+                    Console.Clear();
+                    Console.WriteLine("0-Não");
+                    Console.WriteLine("1-Sim");
+                    Console.WriteLine("A contagem é regressiva?");
+                    int rg = int.Parse( Input("0") );
+
+                    int multiplier = 1;
+
+                    if(type == 'm') multiplier = 60;
+                    
+                    PreStart(time * multiplier, rg);
+                }
             }catch(Exception er)
             {
                 Console.Clear();
@@ -84,7 +95,7 @@ namespace Calculator
                     for(int i = 0; i < time; i++)
                     {
                         Console.Clear();
-                        Console.WriteLine(i);
+                        Console.WriteLine(i + 1);
                         Thread.Sleep(1000);
                     }
                 }else
@@ -96,6 +107,8 @@ namespace Calculator
                         Thread.Sleep(1000);
                     }
                 }
+                Console.Clear();
+                Console.WriteLine("Fim");
             }catch(Exception er)
             {
                 Console.Clear();

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\clemas\\desktop\\Stopwatch\\Stopwatch.csproj",
+      "projectUniqueName": "C:\\Users\\clemas\\Desktop\\dotnet\\003_Stopwatch\\Stopwatch.csproj",
       "projectName": "Stopwatch",
-      "projectPath": "C:\\users\\clemas\\desktop\\Stopwatch\\Stopwatch.csproj",
+      "projectPath": "C:\\Users\\clemas\\Desktop\\dotnet\\003_Stopwatch\\Stopwatch.csproj",
       "packagesPath": "C:\\Users\\clemas\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\clemas\\desktop\\Stopwatch\\obj\\",
+      "outputPath": "C:\\Users\\clemas\\Desktop\\dotnet\\003_Stopwatch\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\clemas\\AppData\\Roaming\\NuGet\\NuGet.Config"

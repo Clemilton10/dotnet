@@ -8,6 +8,12 @@ namespace Calculator
         {
             Menu();
         }
+        static string Input(string df)
+        {
+            string vl = Console.ReadLine() ?? df;
+            vl = String.IsNullOrEmpty(vl) ? df : vl;
+            return vl;
+        }
         static void Menu()
         {
             Console.Clear();
@@ -20,8 +26,7 @@ namespace Calculator
             Console.WriteLine("--------------------------");
             Console.WriteLine("Selecione:");
             Console.WriteLine("");
-            string vl = Console.ReadLine() ?? "5";
-            short r = short.Parse(vl);
+            short r = short.Parse( Input("5") );
             switch(r)
             {
                 case 1: Soma(); break;
@@ -36,14 +41,12 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
-            string sv1 = Console.ReadLine() ?? "0";
-            float v1 = float.Parse(sv1);
+            float v1 = float.Parse( Input("1") );
 
             Console.Clear();
             Console.WriteLine(v1);
             Console.WriteLine("Segundo valor:");
-            string sv2 = Console.ReadLine() ?? "0";
-            float v2 = float.Parse(sv2);
+            float v2 = float.Parse( Input("1") );
 
             //float sm = v1 + v2;
             Console.Clear();
@@ -58,14 +61,12 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
-            string sv1 = Console.ReadLine() ?? "0";
-            float v1 = float.Parse(sv1);
+            float v1 = float.Parse( Input("1") );
 
             Console.Clear();
             Console.WriteLine(v1);
             Console.WriteLine("Segundo valor:");
-            string sv2 = Console.ReadLine() ?? "0";
-            float v2 = float.Parse(sv2);
+            float v2 = float.Parse( Input("1") );
 
             //float sm = v1 - v2;
             Console.Clear();
@@ -80,14 +81,12 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
-            string sv1 = Console.ReadLine() ?? "0";
-            float v1 = float.Parse(sv1);
+            float v1 = float.Parse( Input("1") );
 
             Console.Clear();
             Console.WriteLine(v1);
             Console.WriteLine("Segundo valor:");
-            string sv2 = Console.ReadLine() ?? "0";
-            float v2 = float.Parse(sv2);
+            float v2 = float.Parse( Input("1") );
 
             //float sm = v1 / v2;
             Console.Clear();
@@ -102,14 +101,12 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
-            string sv1 = Console.ReadLine() ?? "0";
-            float v1 = float.Parse(sv1);
+            float v1 = float.Parse( Input("1") );
 
             Console.Clear();
             Console.WriteLine(v1);
             Console.WriteLine("Segundo valor:");
-            string sv2 = Console.ReadLine() ?? "0";
-            float v2 = float.Parse(sv2);
+            float v2 = float.Parse( Input("1") );
 
             //float sm = v1 * v2;
             Console.Clear();
