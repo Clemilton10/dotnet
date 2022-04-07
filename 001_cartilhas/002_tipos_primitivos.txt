@@ -1,0 +1,36 @@
+*** Tipos primitivos ***
+	byte -> 0 -> 255
+	sbyte -> -127 -> 127 // s=signed
+
+	short -> Números pequenos -> 16bt
+	int -> Números médios -> 32bt // padrão
+	long -> Números longos -> 64bt
+	ushort -> Números pequenos // u=unsigned -> não aceita número negativo
+	uint -> Números médios
+	ulong -> Números longos
+
+	float -> 32bt -> float salario = 2.500f;
+	double -> 64bt -> double salario = 25.500; // padrão
+	decimal -> 128bt -> decimal salario = 25.500m;
+
+	bool -> 8bt -> bool pagamentoRecebido = true;
+	char -> 16bt -> char letra = 'A'; // apenas um caracter unicode -> aspa simples
+	string -> string nome = "Clemas"; // uma lista de char -> aspa dupla
+	var -> assume o primeiro item informado // tem que passar um valor inicial
+	object -> pode declarar sem passar valor
+
+	void -> vazio
+
+	null -> int? idade = null;
+
+*** alias ***
+	System.String -> String -> string
+	System.Int32 -> Int32 -> int
+
+*** Valores padrão ***
+	int -> 0
+	float -> 0
+	decimal -> 0
+	bool -> false
+	char -> \0
+	string -> ""

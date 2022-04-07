@@ -1,0 +1,19 @@
+*** Com apenas uma linha ***
+if( condicao1 )
+	...
+else if( condicao2 )
+	...
+else
+	...
+
+*** Com várias linhas ***
+if( condicao1 )
+{
+	...
+}else if( condicao2 )
+{
+	...
+}else
+{
+	...
+}

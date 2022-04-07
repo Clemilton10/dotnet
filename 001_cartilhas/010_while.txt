@@ -1,0 +1,33 @@
+*** Checka antes de executar ***
+// if condicao == true -> executa
+
+// Imprime começando de zero
+int v1 = 0;
+while (v1 < 5)
+{
+	Console.WriteLine(v1);
+	v1++;
+}
+
+// Imprime comaçando de 1
+int v2 = 0;
+while (v2 < 5)
+{
+	v2++;
+	Console.WriteLine(v2);
+}
+
+// Infinito
+while (true)
+{
+	...
+}
+
+*** Executa depois chega para fazer o próximo ***
+// executa -> if condicao == true -> próximo
+int v3 = 0;
+do
+{
+	Console.WriteLine(v3);
+	v3++;
+}while (v3 < 5);

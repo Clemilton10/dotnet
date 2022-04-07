@@ -1,0 +1,80 @@
+=> Versão do DOTNET
+	~> dotnet --version
+
+=> Listar Versões instaladas
+	~> dotnet --list-sdks
+
+=> Ajuda
+	~> dotnet --help
+
+=> Iniciar um projeto
+	Iniciando com nome
+	~> dotnet new console -n NomeProjeto
+
+	Iniciando com nome da pasta
+	~> dotnet new console -o NomePasta
+
+	Obs.:
+	Sempre inicie o nome do projeto, namespace ou classes com primeira letra 'maiúscula'
+		~> internal class Program
+	Constantes tudo em 'maiúsculo'
+		~> const int Q_VEZES = 25;
+	Sempre inicie o nome de uma variável com letra 'minúscula'
+		~> var primeiroNome = "Clemas"
+
+=> Trocar versão do projeto
+	~> dotnet new globaljson --sdk-version 2.0.0 --force
+
+=> Baixa todos os pacotes necessários para a aplicação
+	~> dotnet restore
+
+=> Compilar a aplicação
+	~> dotnet build
+
+=> Limpa as compilações anteriores -> Limpar cache
+	~> dotnet clean
+
+=> Compila e executa a aplicação
+	~> dotnet run
+
+=> Sequência
+	~> dotnet clean -> dotnet build -> dotnet run
+	Obs.: O comando run não executa depuração (Debug)
+
+=> Executar com as variáveis alteradas
+	~> dotnet run --environment=NomeAmbiente
+	~> dotnet run --environment=development
+	~> dotnet run --environment=production
+
+*** Comentários ***
+	Comentar:
+	~> CTRL + k + c
+	Descomentar:
+	~> CTRL + k + u
+	// uma linha
+	/* muitas linhas */
+
+=> Debugar
+	Abrir Box
+	~> CTRL + SHIFT + D
+
+	Depurar
+	~> F5
+	Obs.: No topo tem um console com todos os botões do Debug
+
+=> Vs Code ligaduras
+	CTRL + SHIFT + P
+	~> settings.json
+	|-
+	{
+		"editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+		"editor.fontLigatures": true
+	}
+	-|
+
+	ou
+	File -> Preferences -> Settings
+		> Text Editor
+			|__Font |
+					| Font Ligatures
+					|	~> Edit in settings.json

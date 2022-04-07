@@ -1,0 +1,15 @@
+*** Com apenas uma linha ***
+for(var i = 0; i < 5; i++)
+	...
+
+*** Com várias linhas ***
+for(var i = 0; i < 5; i++)
+{
+	...
+}
+
+*** Invertido ***
+for(var i = 5; i >= 0; i--)
+{
+	...
+}

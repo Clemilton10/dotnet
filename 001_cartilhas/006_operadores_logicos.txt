@@ -1,0 +1,9 @@
+e       -> and => &&
+ou      -> or  => ||
+negação -> not => !
+
+Um exemplo interessante de negação:
+if( !(x<25) )
+{
+	...
+}
